@@ -15,7 +15,7 @@ class XylophoneApp extends StatelessWidget {
               onPressed: () {
                 print('clicked');
               },
-              child: Text(
+              child: const Text(
                 'click me',
                 style: TextStyle(color: Colors.black),
               ),
