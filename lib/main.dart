@@ -10,7 +10,17 @@ class XylophoneApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Container(),
+          child: Center(
+            child: TextButton(
+              onPressed: () {
+                print('clicked');
+              },
+              child: Text(
+                'click me',
+                style: TextStyle(color: Colors.black),
+              ),
+            ),
+          ),
         ),
       ),
     );
