@@ -13,77 +13,94 @@ class XylophoneApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black,
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              FlatButton(
-                color: Colors.red,
-                onPressed: () {
-                  playSound(1);
-                },
-                child: const Text(
-                  'click me 1',
-                  style: TextStyle(color: Colors.black),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.red,
+                  onPressed: () {
+                    playSound(1);
+                  },
+                  child: const Text(
+                    'click me 1',
+                    style: TextStyle(color: Colors.red),
+                  ),
                 ),
               ),
-              FlatButton(
-                color: Colors.orange,
-                onPressed: () {
-                  playSound(2);
-                },
-                child: const Text(
-                  'click me 2',
-                  style: TextStyle(color: Colors.black),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.orange,
+                  onPressed: () {
+                    playSound(2);
+                  },
+                  child: const Text(
+                    'click me 2',
+                    style: TextStyle(color: Colors.orange),
+                  ),
                 ),
               ),
-              FlatButton(
-                color: Colors.yellow,
-                onPressed: () {
-                  playSound(3);
-                },
-                child: const Text(
-                  'click me 3',
-                  style: TextStyle(color: Colors.black),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.yellow,
+                  onPressed: () {
+                    playSound(3);
+                  },
+                  child: const Text(
+                    'click me 3',
+                    style: TextStyle(color: Colors.yellow),
+                  ),
                 ),
               ),
-              FlatButton(
-                color: Colors.green,
-                onPressed: () {
-                  playSound(4);
-                },
-                child: const Text(
-                  'click me 4',
-                  style: TextStyle(color: Colors.black),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.green,
+                  onPressed: () {
+                    playSound(4);
+                  },
+                  child: const Text(
+                    'click me 4',
+                    style: TextStyle(color: Colors.green),
+                  ),
                 ),
               ),
-              FlatButton(
-                color: Colors.teal,
-                onPressed: () {
-                  playSound(5);
-                },
-                child: const Text(
-                  'click me 5',
-                  style: TextStyle(color: Colors.black),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.teal,
+                  onPressed: () {
+                    playSound(5);
+                  },
+                  child: const Text(
+                    'click me 5',
+                    style: TextStyle(color: Colors.teal),
+                  ),
                 ),
               ),
-              FlatButton(
-                color: Colors.blue,
-                onPressed: () {
-                  playSound(6);
-                },
-                child: const Text(
-                  'click me 6',
-                  style: TextStyle(color: Colors.black),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.blue,
+                  onPressed: () {
+                    playSound(6);
+                  },
+                  child: const Text(
+                    'click me 6',
+                    style: TextStyle(color: Colors.blue),
+                  ),
                 ),
               ),
-              FlatButton(
-                color: Colors.purple,
-                onPressed: () {
-                  playSound(7);
-                },
-                child: const Text(
-                  'click me 7',
-                  style: TextStyle(color: Colors.black),
+              Expanded(
+                child: FlatButton(
+                  color: Colors.purple,
+                  onPressed: () {
+                    playSound(7);
+                  },
+                  child: const Text(
+                    'click me 7',
+                    style: TextStyle(color: Colors.purple),
+                  ),
                 ),
               ),
             ],
