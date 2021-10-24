@@ -4,9 +4,9 @@ import 'package:audioplayers/audioplayers.dart';
 void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
-  void playSound() {
+  void playSound(int num) {
     final player = AudioCache();
-    player.play('note1.wav');
+    player.play('note$num.wav');
   }
 
   @override
@@ -19,7 +19,7 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.red,
                 onPressed: () {
-                  playSound();
+                  playSound(1);
                 },
                 child: const Text(
                   'click me 1',
@@ -29,7 +29,7 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.orange,
                 onPressed: () {
-                  playSound();
+                  playSound(2);
                 },
                 child: const Text(
                   'click me 2',
@@ -39,7 +39,7 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.yellow,
                 onPressed: () {
-                  playSound();
+                  playSound(3);
                 },
                 child: const Text(
                   'click me 3',
@@ -49,7 +49,7 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.green,
                 onPressed: () {
-                  playSound();
+                  playSound(4);
                 },
                 child: const Text(
                   'click me 4',
@@ -59,7 +59,7 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.teal,
                 onPressed: () {
-                  playSound();
+                  playSound(5);
                 },
                 child: const Text(
                   'click me 5',
@@ -69,7 +69,7 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.blue,
                 onPressed: () {
-                  playSound();
+                  playSound(6);
                 },
                 child: const Text(
                   'click me 6',
@@ -79,7 +79,7 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.purple,
                 onPressed: () {
-                  playSound();
+                  playSound(7);
                 },
                 child: const Text(
                   'click me 7',
